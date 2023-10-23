@@ -4,11 +4,11 @@ const userSchema = new mongoose.Schema(
   {
     name: { type: String },
     email: { type: String, required: true, unique: true },
-    phoneNumber: { type: String },
+    phone_number: { type: String },
     gender: { type: String },
     password: { type: String },
-    dateOfBirth: { type: String },
-    userType: {
+    date_of_birth: { type: String },
+    user_type: {
       type: String,
       default: "user",
       enum: ["user", "admin", "superAdmin"],
